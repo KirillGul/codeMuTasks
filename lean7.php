@@ -104,9 +104,42 @@ echo str_replace([1,2,3,4,5,6,7,8,9,0], '', $str);
 echo '<br><br>';
 
 echo 'Задача №19 -<br>Решение:<br>';
-$str = 'aabbc';
+$str = 'aabbcddddd';
 echo strtr ($str, ['a'=>'1', 'b'=>'2', 'c'=>'3']);
 echo '<br><br>';
 
 echo 'Задача №20 -<br>Решение:<br>';
+$str = 'aabbc';
+echo substr_replace($str, '!!!', 3, 5);
+echo '<br><br>';
+
+echo 'Задача №21 -<br>Решение:<br>';
+$str = 'abc abc abc';
+echo strpos($str, 'b');
+echo '<br><br>';
+
+echo 'Задача №22 -<br>Решение:<br>';
+$str = 'abc abc abc';
+echo strrpos($str, 'b');
+echo '<br><br>';
+
+echo 'Задача №23 -<br>Решение:<br>';
+$str = 'abc abc abc';
+echo strpos($str, 'b', 3);
+echo '<br><br>';
+
+echo 'Задача №24 -<br>Решение:<br>';
+$str = 'aaa aaa aaa aaa aaa';
+echo strpos($str, ' ', 4);
+echo '<br><br>';
+
+echo 'Задача №25 -<br>Решение:<br>';
+$str = 'aaa aaa aaa aaa a..aa';
+$str_t = strpos($str, '..');
+if (strpos($str, '..', $str_t) == true and $str_t == true) echo 'Есть'; else echo 'Нет';
+echo '<br><br>';
+
+echo 'Задача №26 -<br>Решение:<br>';
+$str = 'http://10.91.191.5/index.php/telefonnyj-spravochnik';
+if (strpos($str, 'http://') === 0) echo 'Есть'; else echo 'Нет';
 echo '<br><br>';
