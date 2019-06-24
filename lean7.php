@@ -143,3 +143,121 @@ echo 'Задача №26 -<br>Решение:<br>';
 $str = 'http://10.91.191.5/index.php/telefonnyj-spravochnik';
 if (strpos($str, 'http://') === 0) echo 'Есть'; else echo 'Нет';
 echo '<br><br>';
+
+echo 'Задача №27 -<br>Решение:<br>';
+$str = 'html css php';
+$str = explode(' ', $str);
+echo $str[0].'_'.$str[1].'_'.$str[2];
+echo '<br><br>';
+
+echo 'Задача №28 -<br>Решение:<br>';
+$str = ['html', 'css', 'php'];
+$str = implode(', ', $str);
+echo $str;
+echo '<br><br>';
+
+echo 'Задача №29 -<br>Решение:<br>';
+$date = '2013-12-31';
+$date = explode('-', $date);
+$date = $date[2].'.'.$date[1].'.'.$date[0];
+echo $date;
+echo '<br><br>';
+
+echo 'Задача №30 -<br>Решение:<br>';
+$str = '1234567890';
+$str = str_split($str, 2);
+var_dump($str);
+echo '<br><br>';
+
+echo 'Задача №31 -<br>Решение:<br>';
+$str = '1234567890';
+$str = str_split($str, 1);
+var_dump($str);
+echo '<br><br>';
+
+echo 'Задача №32 -<br>Решение:<br>';
+$str = '1234567890';
+$str = str_split($str, 2);
+$str = implode('-', $str);
+echo $str;
+echo '<br><br>';
+
+echo 'Задача №33 -<br>Решение:<br>';
+$str = 'fsfsdf   ';
+echo trim($str);
+echo '<br><br>';
+
+echo 'Задача №34 -<br>Решение:<br>';
+$str = '/php/';
+echo trim($str, '/');
+echo '<br><br>';
+
+echo 'Задача №35 -<br>Решение:<br>';
+$str = 'слова слова слова';
+$str = rtrim($str, '.');
+echo $str.'.';
+echo '<br><br>';
+
+echo 'Задача №36 -<br>Решение:<br>';
+$str = '12345';
+echo strrev($str);
+echo '<br><br>';
+
+echo 'Задача №37 -<br>Решение:<br>';
+$str = 'kayak';
+if ($str === strrev($str)) echo 'Да'; else echo 'Нет';
+echo '<br><br>';
+
+echo 'Задача №38 -<br>Решение:<br>';
+$str = 'kayak';
+echo str_shuffle($str);
+echo '<br><br>';
+
+echo 'Задача №39 -<br>Решение:<br>';
+$str = 'abcdefghijklmopqrstywxvz';
+echo substr(str_shuffle($str), 0, 6);
+echo '<br><br>';
+
+echo 'Задача №40 -<br>Решение:<br>';
+$str = '12345678';
+echo number_format($str, 0, '', ' ');
+echo '<br><br>';
+
+echo 'Задача №41 -<br>Решение:<br>';
+$str = 'x';
+for ($i = 1; $i <=9; $i++) echo str_repeat($str, $i).'<br>';
+echo '<br><br>';
+
+echo 'Задача №42 -<br>Решение:<br>';
+for ($i = 1; $i <=9; $i++) echo str_repeat($i, $i).'<br>';
+echo '<br><br>';
+
+echo 'Задача №43 -<br>Решение:<br>';
+$str = 'html, <b>php</b>, js';
+echo strip_tags($str);
+echo '<br><br>';
+
+echo 'Задача №44 -<br>Решение:<br>';
+$str = '<p>html</p> <b>php</b>, <i>js</i>';
+echo strip_tags($str, '<b>, <i>');
+echo '<br><br>';
+
+echo 'Задача №45 -<br>Решение:<br>';
+$str = 'html, <b>php</b>, js';
+echo htmlspecialchars($str);
+echo '<br><br>';
+
+echo 'Задача №46 -<br>Решение:<br>';
+echo ord('a').'<br>';
+echo ord('b').'<br>';
+echo ord('c').'<br>';
+echo ord(' ').'<br>';
+echo '<br><br>';
+
+echo 'Задача №48 -<br>Решение:<br>';
+echo chr(33);
+echo '<br><br>';
+
+echo 'Задача №49 -<br>Решение:<br>';
+$str = 'L';
+echo '<br><br>';
