@@ -126,3 +126,73 @@ $arr = [1, 2, 3, 4, 5];
 $arr = array_reverse($arr);
 var_dump($arr);
 echo '<br><br>';
+
+echo 'Задача №22 -<br>Решение:<br>';
+$arr = ['a', '-', 'b', '-', 'c', '-', 'd'];
+echo array_search('-', $arr);
+echo '<br><br>';
+
+echo 'Задача №23 -<br>Решение:<br>';
+$arr = ['a', '-', 'b', '-', 'c', '-', 'd'];
+array_splice($arr, array_search('-', $arr), 1);
+var_dump($arr);
+echo '<br><br>';
+
+echo 'Задача №24 -<br>Решение:<br>';
+$arr = ['a', 'b', 'c', 'd', 'e'];
+$result = array_replace($arr, [0=>'!', 3=>'!!']);
+var_dump($result);
+echo '<br><br>';
+
+echo 'Задача №25 -<br>Решение:<br>';
+$arr = ['3'=>'a', '1'=>'c', '2'=>'e', '4'=>'b'];
+sort($arr);
+var_dump($arr);
+rsort($arr);
+var_dump($arr);
+asort($arr);
+var_dump($arr);
+arsort($arr);
+var_dump($arr);
+ksort($arr);
+var_dump($arr);
+krsort($arr);
+var_dump($arr);
+natsort($arr);
+var_dump($arr);
+echo '<br><br>';
+
+echo 'Задача №26 -<br>Решение:<br>';
+$arr = ['a'=>1, 'b'=>2, 'c'=>3];
+echo array_rand($arr);
+echo '<br><br>';
+
+echo 'Задача №27 -<br>Решение:<br>';
+$arr = ['a'=>1, 'b'=>2, 'c'=>3];
+echo $arr[array_rand($arr)];
+echo '<br><br>';
+
+echo 'Задача №28 -<br>Решение:<br>';
+$arr = ['a'=>1, 'b'=>2, 'c'=>3];
+shuffle($arr);
+var_dump($arr);
+echo '<br><br>';
+
+echo 'Задача №29 -<br>Решение:<br>';
+$arr = range(1, 25);
+shuffle($arr);
+var_dump($arr);
+echo '<br><br>';
+
+echo 'Задача №30 -<br>Решение:<br>';
+$arr = range('a', 'z');
+shuffle($arr);
+var_dump($arr);
+echo '<br><br>';
+
+echo 'Задача №31 -<br>Решение:<br>';
+$arr = range('a', 'z');
+shuffle($arr);
+$result = array_slice($arr, 0, 6);
+var_dump($result);
+echo '<br><br>';
