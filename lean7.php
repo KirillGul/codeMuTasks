@@ -259,5 +259,61 @@ echo chr(33);
 echo '<br><br>';
 
 echo 'Задача №49 -<br>Решение:<br>';
+$str = 'abcdefghijklmopqrstywxvz';
+$str = strtoupper($str);
+$str = str_shuffle($str);
+echo ord($str[0]);
+echo '<br><br>';
+
+echo 'Задача №50 -<br>Решение:<br>';
+$alphabetmin = 'abcdefghijklmopqrstywxvz';
+for ($str = '', $len = 2, $i = ''; $len > strlen($str);) {
+    $i = str_shuffle($alphabetmin);
+    $str .= $i[0];
+}
+var_dump($str);
+echo '<br><br>';
+
+echo 'Задача №51 -<br>Решение:<br>';
 $str = 'L';
+if (ord($str) >= 65 and ord($str) <= 90) 
+    echo 'Большая буква'; 
+elseif (ord($str) >= 97 and ord($str) <= 122) 
+    echo 'Маленькая буква';
+echo '<br><br>';
+
+echo 'Задача №52 -<br>Решение:<br>';
+$str = 'ab-cd-ef';
+echo strchr($str, '-');
+echo '<br><br>';
+
+echo 'Задача №53 -<br>Решение:<br>';
+$str = 'ab-cd-ef';
+echo strrchr($str, '-');
+echo '<br><br>';
+
+echo 'Задача №54 -<br>Решение:<br>';
+$str = 'ab--cd--ef';
+echo strstr($str, '--');
+echo '<br><br>';
+
+echo 'Задача №55 -<br>Решение:<br>';
+$str = 'var_test_text';
+$str = str_replace('_', ' ', $str);
+$str = lcfirst(ucwords($str));
+$str = str_replace(' ', '', $str);
+echo $str;
+echo '<br><br>';
+
+echo 'Задача №56 -<br>Решение:<br>';
+$arr = [1, 2, 3, 33, 44, 343];
+foreach ($arr as $value) {
+    foreach (str_split($value) as $valuesplit) {
+        if (3 == $valuesplit) {
+            echo $value.' ';
+            break;
+        }
+    }
+    
+}
 echo '<br><br>';
