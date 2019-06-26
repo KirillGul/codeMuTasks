@@ -194,5 +194,144 @@ echo 'Задача №31 -<br>Решение:<br>';
 $arr = range('a', 'z');
 shuffle($arr);
 $result = array_slice($arr, 0, 6);
+echo '<pre>';
 var_dump($result);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №32 -<br>Решение:<br>';
+$arr = ['a', 'b', 'c', 'b', 'a'];
+$arr = array_unique($arr);
+echo '<pre>';
+var_dump($arr);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №33 -<br>Решение:<br>';
+$arr = [1, 2, 3, 4, 5];
+echo array_shift($arr).'<br>';
+echo array_pop($arr).'<br>';
+echo '<pre>';
+var_dump($arr);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №34 -<br>Решение:<br>';
+$arr = [1, 2, 3, 4, 5];
+echo array_unshift($arr, 0).'<br>';
+echo array_push($arr, 6).'<br>';
+echo '<pre>';
+var_dump($arr);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №35 -<br>Решение:<br>';
+$arr = [1, 2, 3, 4, 5, 6, 7, 8];
+while (count($arr) > 0) {
+    echo array_shift($arr);
+    echo array_pop($arr);
+}
+echo '<br><br>';
+
+echo 'Задача №36 -<br>Решение:<br>';
+$arr = ['a', 'b', 'c'];
+$arr = array_pad($arr, 6, '-');
+echo '<pre>';
+var_dump($arr);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №37 -<br>Решение:<br>';
+$arr = array_fill(0, 10, 'x');
+echo '<pre>';
+var_dump($arr);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №38 -<br>Решение:<br>';
+$arr = range(1, 20);
+$arr = array_chunk($arr, 5);
+echo '<pre>';
+var_dump($arr);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №39 -<br>Решение:<br>';
+$arr = ['a', 'b', 'c', 'b', 'a'];
+$result = array_count_values($arr);
+echo '<pre>';
+var_dump($result);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №40 -<br>Решение:<br>';
+$arr = [1, 2, 3, 4, 5];
+$result = array_map('sqrt', $arr);
+echo '<pre>';
+var_dump($result);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №41 -<br>Решение:<br>';
+$arr = ['<b>php</b>', '<i>html</i>'];
+$result = array_map('strip_tags', $arr);
+echo '<pre>';
+var_dump($result);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №42 -<br>Решение:<br>';
+$arr = ['a ', 'b ', 'c '];
+$result = array_map('rtrim', $arr);
+echo '<pre>';
+var_dump($result);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №43 -<br>Решение:<br>';
+$arr1 = [1, 2, 3, 4, 5];
+$arr2 = [3, 4, 5, 6, 7];
+$arr = array_intersect($arr1, $arr2);
+echo '<pre>';
+var_dump($arr);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №44 -<br>Решение:<br>';
+$arr1 = [1, 2, 3, 4, 5];
+$arr2 = [3, 4, 5, 6, 7];
+$arr = array_diff($arr1, $arr2);
+echo '<pre>';
+var_dump($arr);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №45 -<br>Решение:<br>';
+$str = '1234567890';
+$arr = str_split($str);
+echo array_sum($arr);
+echo '<br><br>';
+
+echo 'Задача №46 -<br>Решение:<br>';
+$arr_keys = range(1, 26);
+$arr_values = range('a', 'z');
+$arr = array_combine($arr_keys, $arr_values);
+echo '<pre>';
+var_dump($arr);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №47 -<br>Решение:<br>';
+$arr = range(1,9);
+$arr = array_chunk($arr, 3);
+echo '<pre>';
+var_dump($arr);
+echo '</pre>';
+echo '<br><br>';
+
+echo 'Задача №48 -<br>Решение:<br>';
+$arr = [1, 2, 3, 4, 5, 5];
+$arr = array_unique($arr);
+rsort($arr);
+echo $arr[1];
 echo '<br><br>';
