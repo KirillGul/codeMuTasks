@@ -27,4 +27,3 @@ function func2($a) {
 }
 echo func2(6);
 echo '<br><br>';
-
